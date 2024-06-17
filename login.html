@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Đăng Nhập & Đăng Ký</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b041ca492a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <input class="checkbox" type="checkbox" />
+        <img src="img/navigation/menu.png" alt="" />
+        <ul class="menu-items">
+            <li class="logo-desktop">
+                <a href="index.html">
+                    <h3>
+                        GEARVN
+                    </h3>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    Trang chủ
+                </a>
+            </li>
+            <li><a href="acer.html">
+                    <i class="fa-solid fa-laptop"></i>Laptop Acer</a>
+            </li>
+            <li><a href="asus.html">
+                    <i class="fa-solid fa-laptop"></i>Laptop Asus</a>
+            </li>
+            <li><a href="HP.html">
+                    <i class="fa-solid fa-laptop"></i>Laptop HP</a>
+            </li>
+            <li><a href="LG.html">
+                    <i class="fa-solid fa-laptop"></i>Laptop LG</a>
+            </li>
+            <li><a href="MSI.html">
+                    <i class="fa-solid fa-laptop"></i>Laptop MSI</a>
+            </li>
+            <li><a href="login.html">
+                    <i class="fa-solid fa-user"></i>Đăng nhập & Đăng ký</a>
+            </li>
+        </ul>
+        <div class="logo">
+            <a href="index.html">
+                <h3>GEARVN</h3>
+            </a>
+        </div>
+        <button class="shopping-cart">
+            <img src="img/navigation/shopping-cart.png" alt="" />
+        </button>
+    </nav>
+
+    <div class="container">
+        <input type="checkbox" id="check">
+        <div class="login form">
+            <header>Đăng nhập</header>
+            <form action="#">
+                <input type="text" placeholder="Nhập email của bạn">
+                <input type="password" placeholder="Nhập mật khẩu">
+                <a href="#">Quên mật khẩu?</a>
+                <input type="button" class="button" value="Đăng nhập" onclick="successHandler()">
+            </form>
+            <div class="signup">
+                <span class="signup">Không có tài khoản?
+                    <label for="check" onclick='handleCheck()'>Đăng ký</label>
+                </span>
+            </div>
+        </div>
+        <div class="registration form">
+            <header>Đăng ký</header>
+            <form action="#">
+                <input type="text" placeholder="Nhập email của bạn">
+                <input type="password" placeholder="Tạo mật khẩu">
+                <input type="password" placeholder="Nhập lại mật khẩu">
+                <input type="button" class="button" value="Đăng ký" onclick="successHandler()">
+            </form>
+            <div class="signup">
+                <span class="signup">Đã có tài khoản
+                    <label for="check" onclick='handleCheck()'>Đăng nhập</label>
+                </span>
+            </div>
+        </div>
+        <div class="login-success">
+            <div class="card">
+                <div
+                    style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;display: flex;align-items: center;">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                    </svg>
+                </div>
+                <!-- <h1>Success</h1>
+                <p>We received your purchase request;<br /> we'll be in touch shortly!</p> -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="info" 0>
+            <h4>Thông Tin</h4>
+            <div><i class="fas fa-map-marker-alt"></i><span class="info-text">Cơ sở 1: 242 Đường Láng</span></div>
+            <div><i class="fas fa-map-marker-alt"></i><span class="info-text">Cơ sở 2: 12 Chùa Bộc</span></div>
+            <div><i class="fas fa-phone"></i><span class="info-text">Hotline: 1800 6975</span></div>
+            <div><i class="far fa-envelope"></i><span class="info-text">Email: CSKH@gearvn.com</span></div>
+            <div><i class="fab fa-facebook"></i><span class="info-text">Facebook: fb.com/gearvnhcm</span></div>
+        </div>
+        <div class="policy">
+            <h4>Chính Sách</h4>
+            <div>Chính sách đổi trả hàng</div>
+            <div>Chính sách bảo hành</div>
+            <div>Hướng dẫn mua hàng</div>
+            <div>Chính sách đại lý</div>
+        </div>
+        <div class="fanpage">
+            <h4 style="padding-bottom: 15px;">
+                Fanpage
+            </h4>
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgearvnhcm&tabs=timeline&width=340&height=331&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"></iframe>
+        </div>
+    </footer>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
