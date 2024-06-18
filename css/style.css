@@ -845,6 +845,38 @@ footer {
   .checkout {
     margin-bottom: 10px;
   }
+  .cart-table th {
+    display: none; 
+  }
+
+  .cart-item-image {
+    max-width: 80px;
+    margin-right: 10px; /* Thêm khoảng cách giữa hình ảnh và phần tử bên phải */
+  }
+
+  .cart-item-title, .cart-item-price, .item-quantity, .cart-item-quantity {
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    
+  }
+
+  .cart-item-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    flex: 1;
+    text-align: left;
+  }
+
+  .cart-item-price {
+    text-align: left; /* Căn lề trái cho giá */
+    margin-top: 5px;
+  }
+
+
+  .cart-remove-button {
+    margin-left: 10px; /* Thêm khoảng cách giữa nút xóa và phần tử bên trái */
+  }
 }
 
 /* Tablet */
