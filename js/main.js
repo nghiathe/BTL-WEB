@@ -92,7 +92,7 @@ const products = [
     id: 9,
     name: "Acer Predator Helios 300 PH315-52-78HH Gaming Laptop",
     price: "35.600.000₫",
-    type: "acer",
+    type: "Acer",
   },
   {
     id: 10,
@@ -178,48 +178,6 @@ const products = [
     price: "19.490.000₫",
     type: "asus",
   },
-  {
-    id: 24,
-    name: "Laptop HP Pavilion 14-dv2074TU 7C0P3PA",
-    price: "17.490.000₫",
-    type: "HP",
-  },
-  {
-    id: 25,
-    name: "Laptop LG Gram 2023 14Z90R-G.AH75A5",
-    price: "20.490.000₫",
-    type: "LG",
-  },
-  {
-    id: 26,
-    name: "Laptop MSI Cyborg 15 A12VE 240VN",
-    price: "21.990.000₫",
-    type: "MSI",
-  },
-  {
-    id: 27,
-    name: "Laptop Asus Zenbook 14 OLED UX3405MA-PP475W",
-    price: "35.990.000₫",
-    type: "asus",
-  },
-  {
-    id: 28,
-    name: "Laptop Asus Zenbook 14 OLED UM3402YA-KM405W",
-    price: "14.990.000₫",
-    type: "asus",
-  },
-  {
-    id: 29,
-    name: "Laptop ASUS ExpertBook B1 B1402CVA-NK0176W",
-    price: "14.990.000₫",
-    type: "asus",
-  },
-  {
-    id: 30,
-    name: "Laptop Asus ROG Strix SCAR 18 G834JYR-R6011W",
-    price: "127.990.000₫",
-    type: "asus",
-  },
 ];
 
 // Banner
@@ -284,7 +242,7 @@ products.forEach((product, index) => {
 
 // Asus Products
 products.forEach((product, index) => {
-  if (index <= 30 && product.type === "asus") {
+  if (index <= 25 && product.type === "asus") {
     console.log(product);
     asusProducts
       ? (asusProducts.innerHTML += `
@@ -306,7 +264,7 @@ products.forEach((product, index) => {
 
 // Acer Products
 products.forEach((product, index) => {
-  if (index <= 24 && product.type === "acer") {
+  if (index <= 20 && product.type === "acer") {
     console.log(product);
     acerProducts
       ? (acerProducts.innerHTML += `
@@ -350,7 +308,7 @@ products.forEach((product, index) => {
 
 // LG Products
 products.forEach((product, index) => {
-  if (index <= 25 && product.type === "LG") {
+  if (index <= 12 && product.type === "LG") {
     console.log(product);
     lgProducts
       ? (lgProducts.innerHTML += `
@@ -372,7 +330,7 @@ products.forEach((product, index) => {
 
 // MSI Products
 products.forEach((product, index) => {
-  if (index <= 26 && product.type === "MSI") {
+  if (index <= 20 && product.type === "MSI") {
     console.log(product);
     msiProducts
       ? (msiProducts.innerHTML += `
