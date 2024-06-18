@@ -1037,12 +1037,6 @@ footer {
     padding-right: 50px !important;
     color: white;
   }
-<<<<<<< HEAD
-
-
-
-
-
 
   .cart-container {
     display: flex;
@@ -1117,7 +1111,7 @@ footer {
   }
 
   .cart-total .checkout {
-    background-color: #4CAF50;
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -1132,7 +1126,7 @@ footer {
 
   .cart-total .checkout:hover {
     background-color: #45a049;
-=======
+  }
   .pagination {
     display: flex;
     justify-content: center; 
@@ -1196,7 +1190,6 @@ footer {
   
   .scroll-container img {
     padding: 10px;
->>>>>>> 31655b0fe1dd2535aceb6908a4471a984cb72fff
   }
 
 }
