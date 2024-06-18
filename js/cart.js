@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const cartItemsContainer = document.getElementById('cart-items');
     const cartTotalElement = document.getElementById('cart-total');
-    
+    const checkoutButton = document.querySelector('.checkout');
+
     let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     
     const updateCartDisplay = () => {
@@ -53,5 +54,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    checkoutButton.addEventListener('click', () => {
+        alert('Thanh toán thành công!');
+        localStorage.removeItem('cartItems');
+        cartItems = [];
+    
+        updateCartDisplay();
+    });
     updateCartDisplay();
+    
 });
