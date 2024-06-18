@@ -140,6 +140,15 @@ nav .shopping-cart {
   border-radius: 5px;
   padding: 15px 0;
 }
+.asus-products2 {
+  margin: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px;
+  padding: 15px 0;
+}
 .acer-products {
   margin: 0 15px;
   display: flex;
@@ -180,6 +189,7 @@ nav .shopping-cart {
 .hot-products li:hover,
 .acer-products li:hover,
 .asus-products li:hover,
+.asus-products2 li:hover,
 .HP-products li:hover,
 .LG-products li:hover,
 .MSI-products li:hover {
@@ -436,6 +446,7 @@ nav .shopping-cart {
   text-transform: uppercase;
   height: 100%;
   padding: 5px 14px;
+  border-top: rad;
 }
 .nav-line-3 {
   display: flex;
@@ -783,6 +794,9 @@ footer {
     padding: 20px;
     background-color: #fff;
   }
+  .img-ads{
+    display: none;
+  }
   nav img {
     width: 35px;
     height: 35px;
@@ -954,7 +968,7 @@ footer {
   }
   .news li {
     list-style: none;
-    padding: 7px 10px;
+    padding: 11px 10px;
   }
   .news li:hover {
     background-color: #f0f0f0;
@@ -980,7 +994,6 @@ footer {
   .img-ads {
     max-width: 33.33%;
     padding: 0 0 8px 0;
-    object-fit: contain;
   }
   .ads img {
     width: 100%;
@@ -1024,4 +1037,69 @@ footer {
     padding-right: 50px !important;
     color: white;
   }
+  .pagination {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px; 
+  }
+  .pagination a {
+    padding: 8px 16px; 
+    text-decoration: none; 
+    color: white; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    margin: 0 4px;
+    margin-bottom: 30px; 
+    background-color: #007bff;
+  }
+  #pageNumber,#pageNumber1
+  {
+    padding: 8px 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    margin: 0 4px; 
+    margin-bottom: 30px; 
+  }
+
+  #pageNumber {
+    background-color: gray; 
+  }
+
+  .khach{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .contact{
+    display: block ;
+    text-align: center;
+    height: 250px;
+  }
+  .contact h4{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: 100;
+  }
+  .contact a{
+    margin-top: 20px;
+  
+    background-color: #007bff;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: 200;
+  }
+  .scroll-container {
+    background-color: #b7b3b3;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  .scroll-container img {
+    padding: 10px;
+  }
+
 }

@@ -35,6 +35,7 @@ const successHandler = () => {
 const newProducts = document.querySelector(".new-products");
 const hotProducts = document.querySelector(".hot-products");
 const asusProducts = document.querySelector(".asus-products");
+const asusProducts2 = document.querySelector(".asus-products2");
 const acerProducts = document.querySelector(".acer-products");
 const hpProducts = document.querySelector(".HP-products");
 const lgProducts = document.querySelector(".LG-products");
@@ -176,7 +177,7 @@ const products = [
     id: 23,
     name: "Laptop Asus TUF Gaming F15 FX507ZC4-HN074W",
     price: "19.490.000₫",
-    type: "asus",
+    type: "asus2",
   },
   {
     id: 24,
@@ -200,25 +201,25 @@ const products = [
     id: 27,
     name: "Laptop Asus Zenbook 14 OLED UX3405MA-PP475W",
     price: "35.990.000₫",
-    type: "asus",
+    type: "asus2",
   },
   {
     id: 28,
     name: "Laptop Asus Zenbook 14 OLED UM3402YA-KM405W",
     price: "14.990.000₫",
-    type: "asus",
+    type: "asus2",
   },
   {
     id: 29,
     name: "Laptop ASUS ExpertBook B1 B1402CVA-NK0176W",
     price: "14.990.000₫",
-    type: "asus",
+    type: "asus2",
   },
   {
     id: 30,
     name: "Laptop Asus ROG Strix SCAR 18 G834JYR-R6011W",
     price: "127.990.000₫",
-    type: "asus",
+    type: "asus2",
   },
 ];
 
@@ -242,7 +243,7 @@ setInterval(nextImage, 3000);
 
 // New Products
 products.forEach((product, index) => {
-  if (index <= 3) {
+  if (index >= 26) {
     newProducts
       ? (newProducts.innerHTML += `
         <li class="new-product">
@@ -263,7 +264,7 @@ products.forEach((product, index) => {
 
 // Hot Products
 products.forEach((product, index) => {
-  if (index <= 9) {
+  if (index > 9 && index < 20) {
     hotProducts
       ? (hotProducts.innerHTML += `
       <li class="product">
@@ -288,6 +289,27 @@ products.forEach((product, index) => {
     console.log(product);
     asusProducts
       ? (asusProducts.innerHTML += `
+      <li class="product">
+      <a href="products/asus/product${product.id}.html">
+        <div class="product-img">
+            <img src="img/product/${index + 1}.jpg" alt="" />
+        </div>
+        <div class="product-info">
+            <h3>${product.name}</h3>
+            <p>${product.price}</p>
+        </div>
+      </a>
+    </li>
+    `)
+      : "";
+  }
+});
+
+products.forEach((product, index) => {
+  if (index <= 30 && product.type === "asus2") {
+    console.log(product);
+    asusProducts2
+      ? (asusProducts2.innerHTML += `
       <li class="product">
       <a href="products/asus/product${product.id}.html">
         <div class="product-img">
@@ -429,3 +451,5 @@ document.querySelector(".checkout").addEventListener("click", function () {
 function closePopup() {
   document.getElementById("popupContainer").style.display = "none";
 }
+// new
+
