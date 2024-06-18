@@ -113,7 +113,7 @@ nav .shopping-cart {
   align-items: center;
   width: 100%;
   padding: 10px;
-  background-color: #4eac4b;
+  background-color: #007bff;
 }
 .nav-line span {
   color: #fff;
@@ -410,10 +410,10 @@ nav .shopping-cart {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-bottom: 2px solid #4eac4b;
+  border-bottom: 2px solid #007bff;
 }
 .nav-line-1 span {
-  background-color: #4eac4b;
+  background-color: #007bff;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
@@ -426,10 +426,10 @@ nav .shopping-cart {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-bottom: 2px solid #4eac4b;
+  border-bottom: 2px solid #007bff;
 }
 .nav-line-2 span {
-  background-color: #4eac4b;
+  background-color: #007bff;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
@@ -442,12 +442,12 @@ nav .shopping-cart {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-bottom: 2px solid #4eac4b;
+  border-bottom: 2px solid #007bff;
   margin-left: 20px;
   width: calc(100% - 40px);
 }
 .nav-line-3 span {
-  background-color: #4eac4b;
+  background-color: #007bff;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
@@ -508,7 +508,7 @@ nav .shopping-cart {
 }
 .rating-meter-fill {
   height: 100%;
-  background-color: #4eac4b;
+  background-color: #007bff;
 }
 .rating-count {
   flex: 0 0 100px;
@@ -895,7 +895,7 @@ footer {
     align-items: center;
     padding: 0;
     margin: 0;
-    background-color: #4eac4b;
+    background-color: #007bff;
     box-shadow: none;
     width: 100%;
     height: auto;
@@ -904,7 +904,11 @@ footer {
     list-style: none;
     border-right: 1px solid #fff;
     padding: 10px 15px;
+    height: 100%;
     margin: 0;
+  }
+  nav .menu-items li:hover{
+    background-color: #0056b3;
   }
   nav .menu-items li a {
     color: #fff;
