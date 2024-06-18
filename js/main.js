@@ -196,6 +196,30 @@ const products = [
     price: "21.990.000₫",
     type: "MSI",
   },
+  {
+    id: 27,
+    name: "Laptop Asus Zenbook 14 OLED UX3405MA-PP475W",
+    price: "35.990.000₫",
+    type: "asus",
+  },
+  {
+    id: 28,
+    name: "Laptop Asus Zenbook 14 OLED UM3402YA-KM405W",
+    price: "14.990.000₫",
+    type: "asus",
+  },
+  {
+    id: 29,
+    name: "Laptop ASUS ExpertBook B1 B1402CVA-NK0176W",
+    price: "14.990.000₫",
+    type: "asus",
+  },
+  {
+    id: 30,
+    name: "Laptop Asus ROG Strix SCAR 18 G834JYR-R6011W",
+    price: "127.990.000₫",
+    type: "asus",
+  },
 ];
 
 // Banner
@@ -260,7 +284,7 @@ products.forEach((product, index) => {
 
 // Asus Products
 products.forEach((product, index) => {
-  if (index <= 25 && product.type === "asus") {
+  if (index <= 30 && product.type === "asus") {
     console.log(product);
     asusProducts
       ? (asusProducts.innerHTML += `
