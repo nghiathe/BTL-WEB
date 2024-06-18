@@ -113,7 +113,7 @@ nav .shopping-cart {
   align-items: center;
   width: 100%;
   padding: 10px;
-  background-color: #4eac4b;
+  background-color: #007bff;
 }
 .nav-line span {
   color: #fff;
@@ -132,6 +132,15 @@ nav .shopping-cart {
   padding: 15px 0;
 }
 .asus-products {
+  margin: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px;
+  padding: 15px 0;
+}
+.asus-products2 {
   margin: 0 15px;
   display: flex;
   flex-wrap: wrap;
@@ -180,6 +189,7 @@ nav .shopping-cart {
 .hot-products li:hover,
 .acer-products li:hover,
 .asus-products li:hover,
+.asus-products2 li:hover,
 .HP-products li:hover,
 .LG-products li:hover,
 .MSI-products li:hover {
@@ -410,10 +420,10 @@ nav .shopping-cart {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-bottom: 2px solid #4eac4b;
+  border-bottom: 2px solid #007bff;
 }
 .nav-line-1 span {
-  background-color: #4eac4b;
+  background-color: #007bff;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
@@ -426,28 +436,29 @@ nav .shopping-cart {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-bottom: 2px solid #4eac4b;
+  border-bottom: 2px solid #007bff;
 }
 .nav-line-2 span {
-  background-color: #4eac4b;
+  background-color: #007bff;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   height: 100%;
   padding: 5px 14px;
+  border-top: rad;
 }
 .nav-line-3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-bottom: 2px solid #4eac4b;
+  border-bottom: 2px solid #007bff;
   margin-left: 20px;
   width: calc(100% - 40px);
 }
 .nav-line-3 span {
-  background-color: #4eac4b;
+  background-color: #007bff;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
@@ -508,7 +519,7 @@ nav .shopping-cart {
 }
 .rating-meter-fill {
   height: 100%;
-  background-color: #4eac4b;
+  background-color: #007bff;
 }
 .rating-count {
   flex: 0 0 100px;
@@ -783,6 +794,9 @@ footer {
     padding: 20px;
     background-color: #fff;
   }
+  .img-ads{
+    display: none;
+  }
   nav img {
     width: 35px;
     height: 35px;
@@ -895,7 +909,7 @@ footer {
     align-items: center;
     padding: 0;
     margin: 0;
-    background-color: #4eac4b;
+    background-color: #007bff;
     box-shadow: none;
     width: 100%;
     height: auto;
@@ -904,7 +918,11 @@ footer {
     list-style: none;
     border-right: 1px solid #fff;
     padding: 10px 15px;
+    height: 100%;
     margin: 0;
+  }
+  nav .menu-items li:hover{
+    background-color: #0056b3;
   }
   nav .menu-items li a {
     color: #fff;
@@ -950,7 +968,7 @@ footer {
   }
   .news li {
     list-style: none;
-    padding: 7px 10px;
+    padding: 11px 10px;
   }
   .news li:hover {
     background-color: #f0f0f0;
@@ -976,7 +994,6 @@ footer {
   .img-ads {
     max-width: 33.33%;
     padding: 0 0 8px 0;
-    object-fit: contain;
   }
   .ads img {
     width: 100%;
@@ -1020,6 +1037,7 @@ footer {
     padding-right: 50px !important;
     color: white;
   }
+<<<<<<< HEAD
 
 
 
@@ -1114,6 +1132,71 @@ footer {
 
   .cart-total .checkout:hover {
     background-color: #45a049;
+=======
+  .pagination {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px; 
+  }
+  .pagination a {
+    padding: 8px 16px; 
+    text-decoration: none; 
+    color: white; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    margin: 0 4px;
+    margin-bottom: 30px; 
+    background-color: #007bff;
+  }
+  #pageNumber,#pageNumber1
+  {
+    padding: 8px 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    margin: 0 4px; 
+    margin-bottom: 30px; 
+  }
+
+  #pageNumber {
+    background-color: gray; 
+  }
+
+  .khach{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .contact{
+    display: block ;
+    text-align: center;
+    height: 250px;
+  }
+  .contact h4{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: 100;
+  }
+  .contact a{
+    margin-top: 20px;
+  
+    background-color: #007bff;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: 200;
+  }
+  .scroll-container {
+    background-color: #b7b3b3;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  .scroll-container img {
+    padding: 10px;
+>>>>>>> 31655b0fe1dd2535aceb6908a4471a984cb72fff
   }
 
 }
